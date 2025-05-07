@@ -12008,5 +12008,92 @@ nav {
     display: none;
   }
 }
+.about-section {
+  background-image: url(../../../../public/image/about-bg.jpg);
+  padding: 60px 20px;
+  color: #fff;
+}
+
+.about-section::before {
+  content: "";
+  background-color: rgba(0, 0, 0, 0.5647058824);
+  position: absolute;
+}
+
+.about-section .container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.about-section .content {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  align-items: center;
+}
+
+.about-section .text {
+  flex: 1 1 500px;
+}
+
+.about-section .text h2, .about-section .text .h2 {
+  font-size: 28px;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+.about-section .text .sub {
+  font-style: italic;
+  color: #bbb;
+  margin-bottom: 20px;
+}
+
+.about-section ul {
+  list-style: none;
+  padding: 0;
+  margin-bottom: 20px;
+}
+
+.about-section ul li {
+  margin-bottom: 10px;
+  line-height: 1.6;
+}
+
+.about-section .check-icon {
+  color: #cda45e;
+  margin-right: 8px;
+  font-weight: bold;
+}
+
+.about-section .image {
+  flex: 1 1 400px;
+  border: 5px solid #444;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.7);
+}
+
+.about-section .image img {
+  width: 100%;
+  height: auto;
+  display: block;
+  transition: transform 0.5s ease, opacity 0.5s ease;
+}
+
+.about-section .image img:hover {
+  transform: scale(1.05);
+  opacity: 0.9;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .about-section .content {
+    flex-direction: column;
+  }
+  .about-section .image {
+    order: -1;
+  }
+  .about-section .text h2, .about-section .text .h2 {
+    font-size: 24px;
+  }
+}
 
 /*# sourceMappingURL=app.css.map */
