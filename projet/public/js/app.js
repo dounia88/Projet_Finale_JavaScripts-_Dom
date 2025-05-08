@@ -8,12 +8,12 @@ document.addEventListener('DOMContentLoaded', () => {
   });
 
 //   Menu
-const filterButtons = document.querySelectorAll(".filter-btn");
-const menuItems = document.querySelectorAll(".menu-item");
+let filterButtons = document.querySelectorAll(".filter-btn");
+let menuItems = document.querySelectorAll(".menu-item");
 
 filterButtons.forEach(button => {
   button.addEventListener("click", () => {
-    const category = button.getAttribute("data-category");
+    let category = button.getAttribute("data-category");
 
     // Active button
     filterButtons.forEach(btn => btn.classList.remove("active"));
@@ -29,5 +29,3 @@ filterButtons.forEach(button => {
     });
   });
 });
-
-  
