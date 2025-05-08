@@ -12238,5 +12238,93 @@ nav {
     flex-direction: column;
   }
 }
+.menu-section {
+  background-color: rgb(48, 47, 44);
+  color: #fff;
+  padding: 40px;
+}
+
+.menu-section h4, .menu-section .h4 {
+  font-size: 12px;
+  color: #aaa;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  margin-bottom: 5px;
+}
+
+.menu-section h2, .menu-section .h2 {
+  padding-bottom: 30px;
+}
+
+.menu-filters {
+  text-align: center;
+  padding-bottom: 30px;
+}
+
+.filter-btn {
+  background: none;
+  border: none;
+  color: #fff;
+  margin-right: 20px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.filter-btn:hover {
+  color: #cda45e;
+}
+
+.menu-items {
+  padding-top: 15px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+}
+
+.menu-item {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  padding-bottom: 15px;
+}
+
+.menu-item img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid #2e2e2e;
+  box-shadow: 4px 4px 10px gray;
+}
+
+.menu-item h4, .menu-item .h4 {
+  font-size: 16px;
+  color: #fff;
+  background-color: black;
+  font-weight: bold;
+  position: relative;
+  display: inline-block;
+}
+
+.menu-item h4:hover, .menu-item .h4:hover {
+  color: #534f14;
+}
+
+.menu-item h4 .price, .menu-item .h4 .price {
+  position: absolute;
+  background-color: rgba(13, 13, 13, 0.862745098);
+  right: -100px;
+  color: #534f14;
+  padding: 3px 8px;
+  font-size: 14px;
+  font-weight: bold;
+  border-radius: 3px;
+}
+
+.menu-item p {
+  font-size: 13px;
+  color: #aaa;
+  padding: 4px 0 0;
+}
 
 /*# sourceMappingURL=app.css.map */
