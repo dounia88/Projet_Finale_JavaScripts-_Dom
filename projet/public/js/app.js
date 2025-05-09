@@ -91,4 +91,5 @@ menuItem.forEach(item => {
     }, 1500); 
   });
 
-// ?footer//
+// & Galeri//
+
