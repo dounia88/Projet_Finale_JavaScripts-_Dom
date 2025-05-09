@@ -8,27 +8,8 @@
 </head>
 <body>
 <div  class="body">
-  <!-- <div class="contact-bar">
-    <div class="contact-bar__details">
-      <a href="mailto:contact@examl.com" class="contact-bar__email">
-        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="icon icon--email" viewBox="0 0 16 16">
-          <path d="M0 4a2 2 0 0 1..."/>
-        </svg>
-        contact@examl.com
-      </a>
-  
-      <p class="contact-bar__phone">
-        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="icon icon--phone" viewBox="0 0 16 16">
-          <path d="M11 1a1 1 0 0 1..."/>
-        </svg>
-        +1 5589 55488 55
-      </p>
-    </div>
-  
-    <div class="contact-bar__language">
-      <p class="language-switch">EN <span>/ FR</span></p>
-    </div>
-  </div> -->
+ 
+   
   
   <nav id="home">
    
@@ -74,7 +55,27 @@
  
   </nav>
 
-  
+  <div class="d-flex p justify-content-center align-items-center h-100 ">
+    <div class="text">
+        <h1>welcome to <span> Restaurantly</span></h1>
+        <p>delivering great food for more than 18 years !</p>
+        <div class="btn">
+          <button class="nav__btn-book" >Our menu</button>
+          <button class="nav__btn-book" >Book A Table</button>
+        </div>
+    </div>
+    <a href="#" id="vd">
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-play-fill" viewBox="0 0 16 16">
+            <path d="m11.596 8.697-6.363 3.692c-.54.313-1.233-.066-1.233-.697V4.308c0-.63.692-1.01 1.233-.696l6.363 3.692a.802.802 0 0 1 0 1.393" />
+        </svg>
+    </a>
+    
+    <div class="modal" id="ffllex">
+        <span id="i4la9e">X</span>
+        <iframe width="960" height="540" src="https://www.youtube.com/embed/Y7f98aduVJ8" title="BootstrapMade Template Builder Overview" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </div>
+
+</div>
   
 
 </div>
@@ -248,10 +249,12 @@
 
 <!-- specials -->
 
-<section class="specials-section  ">
+<section class="specials-section">
   <h4 class="section-subtitle">SPECIALS</h4>
   <h2 class="section-title">Check Our Specials</h2>
-  <div class="specials-container container">
+  <div class="specials-container">
+
+    
     <ul class="specials-menu">
       <li class="active" data-id="0">Modi sit est</li>
       <li data-id="1">Unde praesentium sed</li>
@@ -259,20 +262,68 @@
       <li data-id="3">Nostrum qui quasi</li>
       <li data-id="4">Iusto ut expedita aut</li>
     </ul>
+
+    
     <div class="specials-content">
-      <div class="text-content">
-        <h3 id="special-title">Architecto ut aperiam autem id</h3>
-        <em id="special-subtitle">Qui laudantium consequatur laborum sit qui ad sapiente...</em>
-        <p id="special-desc">
-          Et nobis maiores eius. Voluptatibus ut enim blanditiis atque harum sint. Laborum eos ipsum ipsa odit magni...
-        </p>
+      <div class="special-item" id="special-0">
+        <div class="text-content">
+          <h3>Architecto ut aperiam autem id</h3>
+          <em>Qui laudantium consequatur laborum sit qui ad sapiente...</em>
+          <p>Et nobis maiores eius. Voluptatibus ut enim blanditiis atque harum sint. Laborum eos ipsum ipsa odit magni...</p>
+        </div>
+        <div class="image-content">
+          <img src="./public/image/specials-1.png" alt="">
+        </div>
       </div>
-      <div class="image-content">
-        <img id="special-img" src="./public/image/specials-1.png" alt="" />
+
+      <div class="special-item" id="special-1" style="display: none;">
+        <div class="text-content">
+          <h3>Unde praesentium sed</h3>
+          <em>Qui praesentium velit tempore qui quidem</em>
+          <p>Voluptatem est necessitatibus vero nihil voluptas vel. Voluptatem omnis temporibus consequatur non doloribus.</p>
+        </div>
+        <div class="image-content">
+          <img src="./public/image/specials-2.png" alt="">
+        </div>
       </div>
+
+      <div class="special-item" id="special-2" style="display: none;">
+        <div class="text-content">
+          <h3>Pariatur explicabo vel</h3>
+          <em>Temporibus quidem rerum voluptates</em>
+          <p>Odio veritatis perspiciatis quaerat qui aut. Dolorem fuga nam qui. Doloremque voluptas totam dolorem atque.</p>
+        </div>
+        <div class="image-content">
+          <img src="./public/image/specials-3.png" alt="">
+        </div>
+      </div>
+
+      <div class="special-item" id="special-3" style="display: none;">
+        <div class="text-content">
+          <h3>Nostrum qui quasi</h3>
+          <em>Et consequatur nihil et explicabo</em>
+          <p>Consectetur dolore illum quod. Explicabo deleniti ut eveniet. Qui eaque rerum quod.</p>
+        </div>
+        <div class="image-content">
+          <img src="./public/image/specials-4.png" alt="">
+        </div>
+      </div>
+
+      <div class="special-item" id="special-4" style="display: none;">
+        <div class="text-content">
+          <h3>Iusto ut expedita aut</h3>
+          <em>Aut deserunt et doloremque velit</em>
+          <p>Possimus soluta ut id suscipit ea ut in quo quia et soluta. Enim sit et deleniti aut fugiat. Doloribus aut vel autem.</p>
+        </div>
+        <div class="image-content">
+          <img src="./public/image/specials-5.png" alt="">
+        </div>
+      </div>
+
     </div>
   </div>
 </section>
+
 
 <!-- reservation -->
 <section id="book-a-table" class="book-a-table section">

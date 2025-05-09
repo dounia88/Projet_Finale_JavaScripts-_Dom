@@ -18,57 +18,15 @@
     background-color: #00000090;
     position: absolute;
   }
-//   .contact-bar {
-//     display: flex;
-//     justify-content: space-between;
-//     align-items: center;
-//     padding: 2vh 15vh 5vh;
-//   }
-  
-//   .contact-bar__details {
-//     display: flex;
-//     gap: 5vh;
-//     align-items: center;
-//     position: relative;
-//   }
-  
-//   .contact-bar__email {
-//     color: #d0cecc;
-//     display: flex;
-//     align-items: center;
-//     gap: 1vh;
-//     text-decoration: none;
-//   }
-  
-//   .contact-bar__email:hover {
-//     color: #CDA45E;
-//     text-decoration: underline;
-//   }
-  
-//   .contact-bar__phone {
-//     color: #d0cecc;
-//     display: flex;
-//     align-items: center;
-//     gap: 1vh;
-//   }
-  
-//   .icon--email,
-//   .icon--phone {
-//     color: #CDA45E;
-//   }
-  
-//   .contact-bar__language {
-//     position: relative;
-//   }
-  
-//   .language-switch {
-//     font-size: 2vh;
-//     color: #CDA45E;
-//   }
-  
-//   .language-switch span {
-//     color: #d0cecc;
-//   }
+  .text{
+    z-index: 10000000;
+  h1{
+    color: orange;
+    span{
+  color: white;
+    }
+  }
+  }
   
   nav {
     font-family: "Inter", sans-serif;
@@ -118,7 +76,7 @@
   }
   
   .nav__btn-book {
-    width: 10vw;
+    width: 18vw;
     padding: 1vh 3vh;
     border: solid rgb(176, 179, 12);
     background-color: #b1a32779;
