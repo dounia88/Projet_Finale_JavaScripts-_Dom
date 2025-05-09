@@ -91,5 +91,5 @@ menuItem.forEach(item => {
     }, 1500); 
   });
 
-// & Galeri//
+// & caroussel 1//
 
