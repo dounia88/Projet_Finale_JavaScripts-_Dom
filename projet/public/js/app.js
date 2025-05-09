@@ -31,12 +31,13 @@ filterButtons.forEach(button => {
 });
 // & speciales//
 // Liste des données à afficher
+
 let plats = [
     {
       titre: "Architecto ut aperiam autem id",
       sousTitre: "Qui laudantium consequatur laborum sit qui ad sapiente dila parde sonata raqer a videna mareta paulona marka",
       description: "Et nobis maiores eius. Voluptatibus ut enim blanditiis atque harum sint. Laborum eos ipsum ipsa odit magni. Incidunt hic ut molestiae aut qui. Est repellat minima eveniet eius et quis magni nihil.",
-       image: "./public/images/specials-2.png"
+     
     },
     {
       titre: "Unde praesentium sed",
@@ -100,7 +101,7 @@ let plats = [
 
   form.addEventListener("submit", function (e) {
     e.preventDefault(); 
-
+    
     
     loading.style.display = "block";
     errorMessage.style.display = "none";
@@ -124,3 +125,4 @@ let plats = [
     }, 1500); 
   });
 
+// ?footer//

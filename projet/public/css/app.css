@@ -4,6 +4,7 @@
  * Copyright 2011-2025 The Bootstrap Authors
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
  */
+@import "../../node_modules/bootstrap-icons/font/bootstrap-icons.css";
 :root,
 [data-bs-theme=light] {
   --bs-blue: #0d6efd;
@@ -12479,6 +12480,50 @@ nav {
 
 .sent-message {
   color: green;
+}
+
+.member {
+  position: relative;
+  overflow: hidden;
+}
+
+.member img {
+  width: 100%;
+  display: block;
+  transition: transform 0.5s ease;
+}
+
+.member-info {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.6);
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding: 20px;
+  opacity: 0;
+  transform: translateY(100%);
+  transition: all 0.5s ease;
+}
+
+.member-info-content {
+  color: #fff;
+  transform: translateY(20px);
+  opacity: 0;
+  transition: all 0.5s ease;
+}
+
+.member:hover .member-info {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.member:hover .member-info-content {
+  transform: translateY(0);
+  opacity: 1;
 }
 
 /*# sourceMappingURL=app.css.map */
