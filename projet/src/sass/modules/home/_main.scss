@@ -479,4 +479,23 @@
       display: none;
     }
   }
+  // *reservation
   
+  .loading,
+.error-message,
+.sent-message {
+  display: none;
+  margin-top: 10px;
+  font-size: 14px;
+}
+
+.loading {
+  color: orange;
+}
+.error-message {
+  color: red;
+}
+.sent-message {
+  color: green;
+}
+// *team//

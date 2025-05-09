@@ -91,5 +91,36 @@ let plats = [
       imageElement.setAttribute("src", plats[index].image);
     });
   }
-  
-  
+//   & reservation
+
+  let form = document.querySelector(".php-email-form");
+  let loading = document.querySelector(".loading");
+  let errorMessage = document.querySelector(".error-message");
+  let sentMessage = document.querySelector(".sent-message");
+
+  form.addEventListener("submit", function (e) {
+    e.preventDefault(); 
+
+    
+    loading.style.display = "block";
+    errorMessage.style.display = "none";
+    sentMessage.style.display = "none";
+
+    
+    setTimeout(() => {
+      loading.style.display = "none";
+
+      let name = document.getElementById("name").value;
+      let email = document.getElementById("email").value;
+      let phone = document.getElementById("phone").value;
+
+      if (name === "" || email === "" || phone === "") {
+        errorMessage.textContent = "Veuillez remplir tous les champs obligatoires.";
+        errorMessage.style.display = "block";
+      } else {
+        sentMessage.style.display = "block";
+        form.reset(); 
+      }
+    }, 1500); 
+  });
+
